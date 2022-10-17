@@ -1,16 +1,21 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "bruno",
-            "email": "bruno@email.com",
-            "password": "bruno"
-        },
-        {
-            "id": 2,
-            "name": "nilson",
-            "email": "nilson@email.com",
-            "password": "nilson"
-        }
-    ]
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$pkqLKEfUetkwk559mx/EJerfp7DASvfDfue4AMyq3L4.P0FW6rK7C",
+      "lastName": "admin",
+      "firstName": "is",
+      "confirmPassword": "admin@gmail.com",
+      "id": 1,
+      "role": 1
+    },
+    {
+      "email": "phuc@gmail.com",
+      "password": "$2a$10$oVV7ApS1B/euOFc/l4REgeFoUFHiFpgLsLCpACCPiph8cKeGZxyvK",
+      "lastName": "Phúc",
+      "firstName": "Nguyễn",
+      "confirmPassword": "12345678",
+      "id": 2
+    }
+  ]
 }
