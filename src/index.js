@@ -3,9 +3,9 @@ const auth = require("json-server-auth");
 const path = require("path");
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, "db.json"));
-// const middlewares = jsonServer.defaults({
-//   noCors: false,
-// });
+const middlewares = jsonServer.defaults({
+  noCors: false,
+});
 server.db = router.db;
 
 const rules = auth.rewriter({
@@ -18,7 +18,7 @@ const rules = auth.rewriter({
 server.use(rules);
 server.use(auth);
 
-// server.use(middlewares);
+server.use(middlewares);
 server.use((req, res, next) => {
   if (req.method === "POST") {
     req.body.createAt = Date.now();
