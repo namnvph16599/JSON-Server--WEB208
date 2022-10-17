@@ -16,6 +16,13 @@
       "firstName": "Nguyễn",
       "confirmPassword": "12345678",
       "id": 2
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin@gmail.com",
+      "createAt": 1666023378518,
+      "updateAt": 1666023378518,
+      "id": 3
     }
   ],
   "products": [
