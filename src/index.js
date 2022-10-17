@@ -3,9 +3,9 @@ const auth = require("json-server-auth");
 const path = require("path");
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, "db.json"));
-const middlewares = jsonServer.defaults({
-  noCors: false,
-});
+// const middlewares = jsonServer.defaults({
+//   noCors: false,
+// });
 server.db = router.db;
 
 const rules = auth.rewriter({
