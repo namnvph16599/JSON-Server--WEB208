@@ -18,7 +18,7 @@ const rules = auth.rewriter({
 server.use(rules);
 server.use(auth);
 
-server.use(middlewares);
+// server.use(middlewares);
 server.use((req, res, next) => {
   if (req.method === "POST") {
     req.body.createAt = Date.now();
